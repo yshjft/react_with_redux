@@ -9,7 +9,7 @@ React with Redux
 npm i -g create-react-app
 create-react-app
 
-* redux
+* redux</br>
 npm i redux
 
 * react-redux
