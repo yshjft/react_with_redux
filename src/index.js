@@ -4,10 +4,16 @@ import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 
+// Provider : App이라는 컴포넌트의 상위 컴포넌트, react-redux에서 제공하는 컴포넌트
+import {Provider} from 'react-redux';
+// Provider라는 컴포넌트는 반드시 store라는 props를 공급 받아야 한다.
+// 따라서 각각의 컴포넌트가 redux의 store를 따로 import할 필요 없다. 
+import store from "./store"
+
 ReactDOM.render(
-  <React.StrictMode>
+  <Provider store={store}>
     <App />
-  </React.StrictMode>,
+  </Provider>,
   document.getElementById('root')
 );
 
