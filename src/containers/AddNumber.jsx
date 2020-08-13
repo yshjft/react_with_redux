@@ -14,7 +14,7 @@ function mapReduxDispatchToReactProps(dispatch){
 export default connect(null, mapReduxDispatchToReactProps)(AddNumber);
 
 
-/* without react-redux
+/* without react-red
 container component
 컴포넌트가 redux에 종속되는 것을 방지하기위해 사용한다.
 컴포넌트가 redux에 종속될 경우 재사용이 어렵다.
